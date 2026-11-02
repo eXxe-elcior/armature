@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RyujinxRoot Condition="'$(RyujinxRoot)' == ''">$(MSBuildThisFileDirectory)../../../ryujinx</RyujinxRoot>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(RyujinxRoot)/src/ARMeilleure/ARMeilleure.csproj" />
+    <ProjectReference Include="$(RyujinxRoot)/src/Ryujinx.Memory/Ryujinx.Memory.csproj" />
+    <ProjectReference Include="$(RyujinxRoot)/src/Ryujinx.Cpu/Ryujinx.Cpu.csproj" />
+  </ItemGroup>
+
+</Project>

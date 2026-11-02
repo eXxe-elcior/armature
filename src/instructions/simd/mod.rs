@@ -1,0 +1,9 @@
+pub mod simd_arithmetic;
+pub mod simd_cmp;
+pub mod simd_crypto;
+pub mod simd_cvt;
+pub mod simd_hash;
+pub mod simd_logical;
+pub mod simd_memory;
+pub mod simd_mov;
+pub mod simd_shift;

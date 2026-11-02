@@ -1,0 +1,18 @@
+[package]
+name = "armature"
+version = "0.2.0"
+edition = "2024"
+license = "MIT"
+
+[dependencies]
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
+incremental = false

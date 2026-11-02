@@ -1,0 +1,12 @@
+/target/
+bin/
+obj/
+.idea/
+.vscode/
+.claude/
+.codex/
+.agents/
+*.[mM][dD]
+*.markdown
+/vectors.spec
+/vectors.golden
